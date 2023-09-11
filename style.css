@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* SCSS Examples
+Installed SASS using this guide:
+https://replit.com/talk/learn/How-To-Use-SASSSCSS-In-REPLIT/129414
+
+1. go to https://github.com/sass/dart-sass/releases and download dart-sass-1.32.8-linux-ia32.tar.gz
+2. upload it to your REPL
+3. in the shell type tar xvzf dart-sass-1.32.8-linux-ia32.tar.gz
+4. type export PATH=“./dart-sass:$PATH”
+5. now you can use sass with the sass command!
+
+To compile SCSS files (in 'Shell' tab):
+sass style.scss style.css
+
+To watch and compile automatically(in 'Shell' tab):
+sass --watch style.scss:style.css
+
+*/
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+  width: 100%;
+}
+
+#container {
+  width: 680px;
+}
+
+/* example of Nesting */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* mixin example */
+.danger {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: green;
+}
+
+/*extend Example-Inheritance!*/
+.button-basic, .button-submit, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: purple;
+}
+
+.button-report {
+  background-color: red;
+}
+
+.button-submit {
+  background-color: green;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
